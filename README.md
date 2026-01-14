@@ -17,6 +17,7 @@ datasets.csv
 with the schema:
 
 INDEX, NAME, CATEGORY, SIZE, DESCRIPTION, MAIN_LINK
+
 ![Dataset Image](./assets/image.png)
 
 All datasets are mapped to this schema so downstream code can operate without dataset-specific assumptions or ad-hoc parsing.
