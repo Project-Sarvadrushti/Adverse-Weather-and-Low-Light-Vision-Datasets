@@ -1,8 +1,10 @@
 # Adverse Weather & Low-Light Vision Datasets
 
-[![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
+[![Python 3.7+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-green.svg)](LICENSE)
-[![Datasets](https://img.shields.io/badge/datasets-55-orange.svg)](#dataset-taxonomy)
+[![Datasets](https://img.shields.io/badge/datasets-53-orange.svg)](#dataset-taxonomy)
+![Dataset Links](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/JVSCHANDRADITHYA/Adverse-Weather-and-Low-Light-Vision-Datasets/main/link_status.json)
+
 
 A curated, unified index of public datasets for **fog, haze, rain, snow, low-light, underwater, and sandstorm** image restoration and perception research. This repository is intended as a single, consistent reference for discovering and programmatically accessing datasets used in image restoration, enhancement, and robust perception under adverse conditions.
 
@@ -122,8 +124,6 @@ This repository was developed as part of the Sarvadrushti research initiative.
 
 ## Core contributors:
 
-Siddharth Verma — dataset curation, vision research
-
-V S Chandradithya Janaswami — dataset curation, vision research
+Chandradithya and Siddharth Verma — dataset curation, vision research, and codebase development, workflows, and documentation.
 
 Sarvadrushti Research Team — experimentation, evaluation, and review
