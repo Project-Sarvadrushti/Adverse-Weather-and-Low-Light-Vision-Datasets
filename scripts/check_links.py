@@ -73,12 +73,12 @@ for f in failed:
     print(f" - {f[0]} → {f[1]} ({f[2]})")
 
 # ============================
-# ✅ WRITE BADGE JSON (ALWAYS)
+#  WRITE BADGE JSON (ALWAYS)
 # ============================
 
 badge = {
     "schemaVersion": 1,
-    "label": "dataset links",
+    "label": "live links",
     "message": f"{total - failed_count}/{total} working",
     "color": "brightgreen" if failure_ratio < FAIL_THRESHOLD else "orange"
 }
@@ -87,7 +87,7 @@ Path("link_status.json").write_text(json.dumps(badge, indent=2))
 print("\n link_status.json written")
 
 # ============================
-# ❗ EXIT AFTER WRITING FILE
+#  EXIT AFTER WRITING FILE
 # ============================
 
 if failure_ratio >= FAIL_THRESHOLD:
