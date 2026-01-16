@@ -37,13 +37,14 @@ jobs:
           PYTHONUNBUFFERED: "1"
         run: |
           python scripts/check_links.py
-
+          
       - name: Commit link status badge data
-        if: github.repository_owner == 'Project-Sarvadrushti'
+        if: github.event_name != 'pull_request' && github.repository_owner == 'Project-Sarvadrushti'
         run: |
-          git config user.name "github-actions"
+          git config user.name "github-actions[bot]"
           git config user.email "github-actions@github.com"
           git add link_status.json
-          git commit -m "Update dataset link status" || echo "No changes"
-          git push
+          git commit -m "chore: update dataset link status" || echo "No changes"
+          git push origin HEAD:main
+
 
