@@ -39,7 +39,7 @@ jobs:
           python scripts/check_links.py
           
       - name: Commit link status badge data
-        if: github.event_name != 'pull_request' && github.repository_owner == 'Project-Sarvadrushti'
+        if: github.event_name != 'pull_request'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions@github.com"
