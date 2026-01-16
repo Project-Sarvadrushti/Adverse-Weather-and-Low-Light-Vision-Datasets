@@ -39,7 +39,7 @@ jobs:
           python scripts/check_links.py
 
       - name: Commit link status badge data
-        if: github.repository_owner == 'JVSCHANDRADITHYA'
+        if: github.repository_owner == 'Project-Sarvadrushti'
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
