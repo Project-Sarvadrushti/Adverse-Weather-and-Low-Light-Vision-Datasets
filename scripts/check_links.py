@@ -81,12 +81,18 @@ badge = {
     "schemaVersion": 1,
     "label": "live links",
     "message": f"{total - failed_count}/{total} working",
-    "color": "brightgreen" if failure_ratio < FAIL_THRESHOLD else "orange",
-    "lastcheck": datetime.utcnow().isoformat() + "Z"
+    "color": "brightgreen" if failure_ratio < FAIL_THRESHOLD else "orange"
 }
 
 Path("link_status.json").write_text(json.dumps(badge, indent=2))
 print("\n link_status.json written")
+
+
+meta = {
+    "lastcheck": datetime.utcnow().isoformat() + "Z"
+}
+Path("status_meta.json").write_text(json.dumps(badge, indent=2))
+print("\n status_meta.json written")
 
 # ============================
 #  EXIT AFTER WRITING FILE
