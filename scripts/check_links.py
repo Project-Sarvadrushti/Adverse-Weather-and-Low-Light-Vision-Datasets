@@ -81,7 +81,7 @@ badge = {
     "schemaVersion": 1,
     "label": "live links",
     "message": f"{total - failed_count}/{total} working",
-    "color": "brightgreen" if failure_ratio < FAIL_THRESHOLD else "orange"
+    "color": "brightgreen" if failure_ratio < FAIL_THRESHOLD else "orange",
     "timestamp": datetime.utcnow().isoformat() + "Z"
 }
 
