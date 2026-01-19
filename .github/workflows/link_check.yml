@@ -41,8 +41,9 @@ jobs:
       - name: Commit link status badge data
         if: github.event_name != 'pull_request'
         run: |
-          git config user.name "JVSCHANDRADITHYA"
-          git config user.email "adithya.jvsc@gmail.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions@github.com"
+
       
           git add link_status.json
       
