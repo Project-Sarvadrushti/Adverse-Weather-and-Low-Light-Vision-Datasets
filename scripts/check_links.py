@@ -3,6 +3,7 @@ import sys
 import requests
 import json
 from pathlib import Path
+from datetime import datetime
 
 CSV_FILE = "datasets/datasets.csv"
 TIMEOUT = 15
@@ -81,6 +82,7 @@ badge = {
     "label": "live links",
     "message": f"{total - failed_count}/{total} working",
     "color": "brightgreen" if failure_ratio < FAIL_THRESHOLD else "orange"
+    "timestamp": datetime.utcnow().isoformat() + "Z"
 }
 
 Path("link_status.json").write_text(json.dumps(badge, indent=2))
