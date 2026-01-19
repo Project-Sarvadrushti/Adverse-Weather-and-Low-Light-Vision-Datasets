@@ -41,10 +41,19 @@ jobs:
       - name: Commit link status badge data
         if: github.event_name != 'pull_request'
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions@github.com"
+          git config user.name "JVSCHANDRADITHYA"
+          git config user.email "adithya.jvsc@gmail.com"
+      
           git add link_status.json
-          git commit -m "chore: update dataset link status" || echo "No changes"
+      
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+      
+          git commit -m "chore: update dataset link status"
+      
+          git pull --rebase origin main
           git push origin HEAD:main
 
 
