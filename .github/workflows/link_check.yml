@@ -46,7 +46,7 @@ jobs:
 
       
           git add link_status.json
-          git add meta_status.json
+          git add status_meta.json
       
           if git diff --cached --quiet; then
             echo "No changes to commit"
