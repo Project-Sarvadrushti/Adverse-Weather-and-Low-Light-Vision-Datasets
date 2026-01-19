@@ -124,6 +124,4 @@ This repository was developed as part of the Sarvadrushti research initiative.
 
 ## Core contributors:
 
-Chandradithya and Siddharth Verma — dataset curation, vision research, and codebase development, workflows, and documentation.
-
-Sarvadrushti Research Team — experimentation, evaluation, and review
+Sarvadrushti Research Team — experimentation, evaluation, and review and dataset curation
